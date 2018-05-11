@@ -33,6 +33,6 @@ HTML
 Use tab with 2 characters
 
 
-##WIREFRAME
+WIREFRAME
 ----
 https://imgur.com/a/X4ipBof
