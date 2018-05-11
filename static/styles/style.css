@@ -1,0 +1,19 @@
+.saldo {
+   text-align: center;
+}
+
+.nome-table {
+   width: 60%;
+}
+
+.campeonato {
+   border: 1px solid #d3d3d3;
+   padding: 3% 0;
+   border-radius: 15px;
+   transition: border-color 0.5s;
+}
+
+.campeonato:hover {
+   cursor: pointer;
+   border-color: #5f5f5f;
+}
