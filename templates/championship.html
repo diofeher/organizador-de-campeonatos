@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Jogos</h1>
+
+{% for game in games %}
+<p>
+    {{ game[0] }} <input type="text"> x <input type="text"> {{ game[1] }}
+     
+</p>
+{% endfor %}
+{% endblock %}
