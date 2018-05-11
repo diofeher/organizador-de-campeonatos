@@ -1,32 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Organizador de campeonatos</h1>
-<p>Digite os nomes dos jogadores</p>
-<form method="POST" action="/process/">
-  <p>
-      <input type="text" name="player" />
-  </p>
-  <p>
-      <input type="text" name="player" />
-  </p>
-  <p>
-      <input type="text" name="player" />
-  </p>
-  <p>
-      <input type="text" name="player" />
-  </p>
-  <p>
-      <input type="text" name="player" />
-  </p>
-  <p>
-    <input type="text" name="player" />
-  </p>
-  <p>
-    <input type="text" name="player" />
-  </p>
-  <p>
-    <input type="text" name="player" />
-  </p>
-  <input type="submit" value="Enviar"/>
-</form>
+
+<section id="index">
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h3 class="header center orange-text">Organizador de campeonatos</h3>
+      <div class="row center">
+        <h5 class="header col s12 light">Digite os nomes dos jogadores</h5>
+      </div>
+      <div class="row center">
+         <form method="POST" action="/process/">
+            <p><input type="text" name="player" /></p>
+            <p><input type="text" name="player" /></p>
+            <p><input type="text" name="player" /></p>
+            <p><input type="text" name="player" /></p>
+            <p><input type="text" name="player" /></p>
+            <p><input type="text" name="player" /></p>
+            <p><input type="text" name="player" /></p>
+            <p><input type="text" name="player" /></p>
+
+            <button type="submit" class="btn-large waves-effect waves-light orange" value="enviar">Enviar</button>
+          </form>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
 {% endblock content %}
