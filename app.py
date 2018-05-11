@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import itertools
+import random
 app = Flask(__name__)
 
 @app.route("/")
@@ -10,5 +11,6 @@ def index():
 def process():
     if request.method == 'POST':
         players = [player for player in request.form.getlist('player') if player != '']
-        games = itertools.combinations(players, r=2)
+        games = list(itertools.combinations(players, r=2))
+        random.shuffle(games)
         return render_template('championship.html', games=games)
