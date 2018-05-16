@@ -36,3 +36,11 @@ Use tab with 2 characters
 WIREFRAME
 ----
 https://imgur.com/a/X4ipBof
+
+
+Requirements
+============
+SqlAlchemy - used as ORM with SQLite
+Flask-Dance[sqla] - oAuth consumer
+Jinja2 - Templating system
+gunicorn - web server used on heroku
